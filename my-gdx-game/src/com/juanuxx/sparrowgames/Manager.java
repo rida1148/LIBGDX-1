@@ -7,17 +7,17 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Texture;
 
 public class Manager {
-	//Creamos nuestro atributo AssetManager.
+	
     public AssetManager manager;
     
-    //Creamos un método constructor y instanciamos el objeto con AssetManager();
+   
     public Manager(){
         manager = new AssetManager();
         manager.load("logo.png",Texture.class); 
     }
     
     public void loadAssets() {
-        //Cargo una textura.
+     
          manager.load("fondo.png",Texture.class);
          manager.load("pajaro.png",Texture.class);
          manager.load("fondo_resumen.png",Texture.class);
